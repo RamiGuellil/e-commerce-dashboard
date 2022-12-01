@@ -1,0 +1,12 @@
+<template>
+    <v-navigation-drawer>
+        <v-avatar>
+            <v-icon>mdi-apps</v-icon>
+        </v-avatar>
+        <v-list>
+            <v-list-item>
+                <div>Home</div>
+            </v-list-item>
+        </v-list>
+    </v-navigation-drawer>
+</template>
