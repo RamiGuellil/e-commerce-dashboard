@@ -6,7 +6,9 @@
       <v-text-field type="password" label="Password" />
     </v-card-text>
     <v-card-actions>
-      <v-btn width="100%" color="primary" variant="flat" dark @click="login()">Login</v-btn>
+      <v-btn width="100%" color="primary" variant="flat" dark @click="login()"
+        >Login</v-btn
+      >
     </v-card-actions>
   </v-card>
 </template>
@@ -14,10 +16,14 @@
 import router from "@/router";
 export default {
   setup() {},
+  mounted() {
+    router.push('/');
+  },
   methods: {
-    login(){
-        router.replace("/");
-    }
-  }
+    login() {
+      //router.replace("/");
+      this.$emit("isLogin", true);
+    },
+  },
 };
 </script>
