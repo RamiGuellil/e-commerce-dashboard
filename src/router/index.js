@@ -2,6 +2,10 @@ import { createWebHistory, createRouter } from "vue-router";
 
 import Login from '@/components/Login'
 import MainPage from '@/components/MainPage'
+import Dashboard from '@/components/Dashboard'
+import Products from '@/components/Products'
+import Orders from '@/components/Orders'
+import Analytics from '@/components/Analytics'
 const routes = [
     /*{
         path: '/',
@@ -22,16 +26,29 @@ const routes = [
         ]
     },*/
     {
-        path: '/',
-        name: 'Home',
-        component: MainPage
+        path: '/dashboard',
+        name: 'Dashboard',
+        component: Dashboard
     },
     {
-        path: '/login',
-        name: 'Login',
-        component: Login
+        path: '/products',
+        name: 'Products',
+        component: Products
     },
-    { path: '/:catchAll(.*)', redirect: '/login' }
+    {
+        path: '/orders',
+        name: 'Orders',
+        component: Orders
+    },
+    {
+        path: '/analytics',
+        name: 'Analytics',
+        component: Analytics
+    },
+    /*{
+        path: '/:catchAll(.*)',
+        redirect: '/login'
+    }*/
 ]
 
 const router = createRouter({
