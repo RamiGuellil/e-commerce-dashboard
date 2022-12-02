@@ -31,6 +31,11 @@ const routes = [
         component: Dashboard
     },
     {
+        path: '/',
+        name: 'Dashboard-default',
+        component: Dashboard
+    },
+    {
         path: '/products',
         name: 'Products',
         component: Products

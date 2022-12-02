@@ -2,11 +2,11 @@
   <v-card>
     <v-card-title>Login</v-card-title>
     <v-card-text>
-      <v-text-field label="User Name" />
-      <v-text-field type="password" label="Password" />
+      <v-text-field v-model="username" label="User Name" />
+      <v-text-field v-model="password" type="password" label="Password" />
     </v-card-text>
     <v-card-actions>
-      <v-btn width="100%" color="primary" variant="flat" dark @click="login()"
+      <v-btn block color="primary" variant="flat" dark @click="login()"
         >Login</v-btn
       >
     </v-card-actions>
@@ -14,15 +14,23 @@
 </template>
 <script>
 import router from "@/router";
+import { ref } from "vue";
 export default {
-  setup() {},
+  setup() {
+    const username = ref('admin');
+    const password = ref('admin');
+    return {
+      username, password
+    }
+  },
   mounted() {
-    router.push('/');
+    router.push("/");
   },
   methods: {
     login() {
-      //router.replace("/");
-      this.$emit("isLogin", true);
+      if (this.username === "admin" && this.password === "admin") {
+        this.$emit("isLogin", true);
+      }
     },
   },
 };
