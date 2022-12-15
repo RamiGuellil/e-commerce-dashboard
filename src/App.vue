@@ -1,8 +1,10 @@
 <template>
-  <v-app>
+  <v-app >
     <v-main>
-      <Login v-if="!isAuth" @isLogin="isAuth = $event"></Login>
-      <MainPage v-else></MainPage>
+      <template v-if="isAuth">
+        <MainPage style="background-color: #f4f4f4; min-height: 100vh"></MainPage>
+      </template>
+      <Login v-else @isLogin="isAuth = $event"></Login>
     </v-main>
   </v-app>
 </template>
