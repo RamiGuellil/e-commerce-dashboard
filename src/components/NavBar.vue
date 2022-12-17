@@ -27,8 +27,10 @@
               <v-icon size="large" class="min-nav-bar_btn_icon" :class="{ rotate: isMin }"
                 >mdi-chevron-double-left</v-icon
               >
-            </v-btn></v-col>
-        </v-row></v-list-item>
+            </v-btn></v-col
+          >
+        </v-row></v-list-item
+      >
     </template>
 
     <v-divider></v-divider>

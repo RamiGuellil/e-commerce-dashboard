@@ -140,14 +140,14 @@
         <v-card-text class="mt-2">
           <v-row>
             <v-col>
-              <div class="font-weight-medium">Income by product</div>
+              <div class="font-weight-medium">Best selling products</div>
               <v-divider class="mt-4"></v-divider>
-              <DoughnutChart :chartData="data"/>
+              <DoughnutChart :chartData="data" />
             </v-col>
           </v-row>
           <v-row>
             <v-col>
-              <div class="font-weight-medium">Most clients</div>
+              <div class="font-weight-medium">Active clients</div>
               <v-divider class="mt-4"></v-divider>
               <div class="mt-4" style="position: relative; height: 4em">
                 <v-avatar
@@ -247,15 +247,25 @@ export default {
       },
     ];
     const data = {
-      labels: ["Red", "Blue", "Yellow"],
+      labels: ["Product 1", "Product 2", "Product 3", "Product 4", "Product 5", "Product 6"],
       datasets: [
         {
-          label: "My First Dataset",
-          data: [300, 50, 100],
+          label: "Best selling products",
+          data: [
+            Math.floor(Math.random() * (395 - 120) + 120),
+            Math.floor(Math.random() * (395 - 120) + 120),
+            Math.floor(Math.random() * (395 - 120) + 120),
+            Math.floor(Math.random() * (395 - 120) + 120),
+            Math.floor(Math.random() * (395 - 120) + 120),
+            Math.floor(Math.random() * (395 - 120) + 120),
+          ],
           backgroundColor: [
-            "rgb(255, 99, 132)",
-            "rgb(54, 162, 235)",
-            "rgb(255, 205, 86)",
+            "rgb(244, 122, 31)",
+            "rgb(253, 187, 47)",
+            "rgb(0, 124, 195)",
+            "rgb(55, 123, 43)",
+            "rgb(122, 193, 66)",
+            "rgb(0, 82, 155)"
           ],
           hoverOffset: 4,
         },
