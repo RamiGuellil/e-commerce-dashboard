@@ -1,10 +1,11 @@
 <template>
   <v-navigation-drawer
-    absolute
     :modelValue="isShowProp"
     theme="dark"
     style="background-color: #1e1e2d"
     :rail="isMin"
+    floating
+    class="height-app"
   >
     <template v-slot:prepend>
       <v-list-item lines="two" nav>
@@ -26,8 +27,10 @@
               <v-icon size="large" class="min-nav-bar_btn_icon" :class="{ rotate: isMin }"
                 >mdi-chevron-double-left</v-icon
               >
-            </v-btn></v-col>
-        </v-row></v-list-item>
+            </v-btn></v-col
+          >
+        </v-row></v-list-item
+      >
     </template>
 
     <v-divider></v-divider>

@@ -15,6 +15,9 @@ import { registerPlugins } from '@/plugins'
 
 import router from '@/router'
 
+import { Chart, registerables } from "chart.js";
+
+Chart.register(...registerables);
 
 const app = createApp(App)
 app.use(router);
