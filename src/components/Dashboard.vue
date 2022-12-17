@@ -192,7 +192,6 @@
 import { ref } from "vue";
 import { LineChart } from "vue-chart-3";
 import { BarChart } from "vue-chart-3";
-//import {client_103512102022, client_111312102022, client_113712102022, client_114212102022, client_114412102022} from "@/assets/";
 import client_103512102022 from "@/assets/client_103512102022.jpg";
 import client_111312102022 from "@/assets/client_111312102022.jpg";
 import client_113712102022 from "@/assets/client_113712102022.jpg";
