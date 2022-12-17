@@ -3,7 +3,7 @@
     <div style="margin-bottom: 10px">Dashboard</div>
     <div>
       <v-row>
-        <v-col lg="3" md="4" xl="3" xs="6" sm="6">
+        <v-col cols="12" lg="3" md="4" xl="3" xs="6" sm="6">
           <v-card flat>
             <v-card-title>
               <div>
@@ -34,7 +34,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col lg="3" md="4" xl="3" xs="6" sm="6">
+        <v-col cols="12" lg="3" md="4" xl="3" xs="6" sm="6">
           <v-card flat>
             <v-card-title>
               <div>
@@ -65,7 +65,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col lg="3" md="4" xl="3" xs="6" sm="6">
+        <v-col cols="12" lg="3" md="4" xl="3" xs="6" sm="6">
           <v-card flat>
             <v-card-title>
               <div>
@@ -96,7 +96,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col lg="3" md="4" xl="3" xs="6" sm="6">
+        <v-col cols="12" lg="3" md="4" xl="3" xs="6" sm="6">
           <v-card flat>
             <v-card-title>
               <div>
@@ -129,7 +129,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col lg="7" md="7" xl="7" xs="12" sm="12">
+        <v-col cols="12" lg="7" md="7" xl="7" xs="12" sm="12">
           <v-card flat>
             <v-card-title> Sales this mounths </v-card-title>
             <v-card-subtitle>Earning from all clients</v-card-subtitle>
@@ -149,7 +149,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col lg="5" md="5" xl="5" xs="12" sm="12">
+        <v-col cols="12" lg="5" md="5" xl="5" xs="12" sm="12">
           <v-row>
             <v-col>
               <v-card flat>

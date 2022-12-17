@@ -1,7 +1,7 @@
 <template>
   <div style="margin-bottom: 12px">Analystics</div>
   <v-row>
-    <v-col xs="12" sm="12" lg="6" xl="6" md="6">
+    <v-col cols="12" xs="12" sm="12" lg="6" xl="6" md="6">
       <v-row>
         <v-col>
           <v-sheet
@@ -135,7 +135,7 @@
         </v-col>
       </v-row>
     </v-col>
-    <v-col xs="12" sm="12" lg="6" xl="6" md="6">
+    <v-col cols="12" xs="12" sm="12" lg="6" xl="6" md="6">
       <v-card flat style="overflow: auto">
         <v-card-text class="mt-2">
           <v-row>
